@@ -59,7 +59,7 @@ export default function Mani(props) {
   
   //function to handle word Count
   function wordCount() {
-    let arr=text.split(" ");
+    let arr=text.split(/\s+/);
     //console.log(arr);
     arr=arr.filter((word)=>{return word.length>0});
     return arr.length;
